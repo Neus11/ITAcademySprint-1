@@ -1,0 +1,223 @@
+/*------------- Sprint 2: Excercici 4 ---------------*/ 
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+.logo {
+    animation: logoMove 3s;
+}
+.background-img {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 410px;
+    position: relative;
+}
+.contenedor-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;   
+}
+a {
+    text-decoration: none;
+    color:grey;
+}
+a:hover {
+    font-size: 16pt;
+}
+p a i {
+    padding: 10px;
+}
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+.comentario {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(101, 95, 95, 0.25);
+    width: 80%;
+    padding: 20px 20px 35px 20px;
+    margin-top: 172px;
+    
+}
+.comentario h2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 20pt;
+    color: rgba(250, 128, 114, 0.7);
+    animation: titolMove 5s;
+}
+/*------------- Sprint 2: Excercici 5 ---------------*/ 
+.wrap {
+    display:flex;
+    flex-direction: row;
+
+}
+.contendor-articulos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(216,215,215);
+    padding: 10px;
+    margin-top: 10px;
+    width: 74%;
+}
+.cultura {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245,241,241);
+    padding: 10px;
+    margin: 5px;
+    width: 46%;
+}
+.titulo-cultura {
+    background-color: salmon;
+    font-size: 14pt;
+    font-weight: 500;
+    color: white;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.contenedor-foto {
+    display: flex;
+    align-items:flex-end;
+}
+.foto {
+    color: rgb(225, 225, 143);
+    padding: 1px 10px;
+    position: absolute;
+}
+.articulo-cult p {
+    padding: 6px;
+    column-count: 2;
+    color: grey;
+    line-height: 1.2;
+}
+.gastronomia {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245,241,241);
+    padding: 10px;
+    margin: 5px;
+    width: 46%;
+    
+}
+.titulo-gastronomia {
+    background-color: salmon;
+    font-size: 14pt;
+    font-weight: 500;
+    color: white;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.articulo-gastronomia p {
+    padding: 6px;
+    column-count: 2;
+    color: grey;
+    line-height: 1.2;
+}
+.turismo {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245,241,241);
+    padding: 10px;
+    margin: 5px;
+    width: 46%;
+    
+}
+.titulo-turismo {
+    background-color: salmon;
+    font-size: 14pt;
+    font-weight: 500;
+    color: white;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.articulo-turismo p {
+    padding: 6px;
+    column-count: 2;
+    color: grey;
+    line-height: 1.2;
+}
+.vida {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245,241,241);
+    padding: 10px;
+    margin: 5px;
+    width: 46%;
+    
+}
+.titulo-vida {
+    background-color: salmon;
+    font-size: 14pt;
+    font-weight: 500;
+    color: white;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.articulo-vida p {
+    padding: 6px;
+    column-count: 2;
+    color: grey;
+    line-height: 1.2;
+}
+.something {
+    background-color:  rgb(216,215,215);
+    padding: 10px;
+    margin: 10px 0px 0px 10px;
+    color: grey;
+    text-align: center;
+    width: 25%;
+}
+.bottom {
+    text-align: center;
+    padding-right: 10px;
+}
+.footer {
+    background-color: rgb(216,215,215);
+    align-content: center;
+}
+footer {
+   text-align: center;
+   background-color: rgb(245,241,241);
+   margin: 10px;
+   padding: 10px;
+}
+@media (max-width: 768px) {
+    .comentario {
+        opacity: 0;
+    }
+}
+@keyframes logoMove {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes titolMove {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
